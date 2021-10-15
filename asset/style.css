@@ -1,0 +1,159 @@
+@import url('https://fonts.google.com/specimen/Poppins?query=pop');
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+
+/* sidebar */
+.header{
+    background-color: rgba(255, 255, 255, 0.459);
+    height: 65px;
+}
+.header .user-img{
+    height: auto;
+    width: 33px;
+    margin-bottom: 5px;
+}
+
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+.sidebar{
+    position: fixed;
+    background: #343a40;
+    height: 100%;
+    width: 250px;
+    transition: 0.5s;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.sidebar.active{
+    width: 250px;
+}
+
+.sidebar ul{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.sidebar ul li{
+    position: relative;
+    width: 100%;
+    list-style: none;
+    
+}
+
+.sidebar .brand{
+    padding: 9px 0px;
+}
+
+
+
+
+.sidebar .brand .brand-text{
+    font-size: 23px;
+    padding: 4px 26px;
+}
+
+.sidebar .nav-link:hover {
+    background: #19B3D3;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    border-bottom: 1px solid  #363c3d ;
+}
+
+.sidebar ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    padding-left: 8px;
+}
+
+.sidebar ul li a .title{
+    position: relative;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    text-align: start;
+    margin-bottom: 0px;
+}
+
+/* button collapse */
+.toggler{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background: #343a40;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 60px;
+}
+.toggler:hover{
+    background: #19B3D3;
+}
+
+/* content */
+.content-wrapper{
+    background-color: #f4f6f9;
+    min-height: 640px;
+}
+
+.content-header .breadcrumb{
+    background-color: #f4f6f9;
+}
+
+.content .dataTables-wrapper .dataTables_filter{
+    float: right;
+}
+
+.dataTables-wrapper .dataTables_filter input{
+    display: inline-block;
+    width: auto;
+    margin-left: 4px;
+}
+
+.content .card-footer .pagination{
+    float: right;
+}
+
+/* footer */
+.main-footer{
+    bottom: 0;
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    color: #869099;
+    padding: 16px;
+}

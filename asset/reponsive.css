@@ -1,0 +1,32 @@
+/* tablet */
+@media (max-width: 767px){
+    /* sidebar */
+    .sidebar{
+        left: -250px
+    }
+    .sidebar.active{
+        left: 0px;
+        width: 250px;
+    }
+    .content-wrapper{
+        margin-left: 0px;
+    }
+    .main-footer{
+        margin-left: 0px;
+    }
+}
+
+/* pc */
+@media (min-width: 768px){
+    /* content */
+    .content-wrapper{
+        margin-left: 250px;
+    }
+    /* menu */
+    .toggler{
+        display: none;
+    }
+    .main-footer{
+        margin-left: 250px;
+    }
+}
